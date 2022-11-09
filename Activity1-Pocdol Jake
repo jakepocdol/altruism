@@ -1,0 +1,47 @@
+
+/**
+* Name: Jake L. Pocdol
+* Section: Altruism 
+* Year: 4th year 
+*/
+```
+
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        int input;
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.print("Enter Grade: ");
+        int firstInt = sc.nextInt();
+        System.out.print("Enter Grade: ");
+        int  secondInt = sc.nextInt();
+        int sum = firstInt + secondInt;
+        float ave = sum/2f;
+        
+        System.out.println("[YES]to input more grade ");
+        
+        System.out.println(" Enter 1 for Yes");
+        System.out.println("Enter 2 for No");
+         input = sc.nextInt();
+         
+         switch (input) {
+             
+             case 1: 
+             System.out.println("you choose  [YES]");
+             while (input==1) {
+                 System.out.print("Enter grade: ");
+                 float TheGrade= sc.nextFloat();
+             }
+             break;
+             
+             case 2:
+             System.out.println("You choose NO");
+             System.out.println("AVERAGE   " +ave);
+             break;
+                 
+         }        
+    }
+}
